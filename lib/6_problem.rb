@@ -1,6 +1,6 @@
 # Find a player who has won the highest number of Player of the Match awards for each season
 require 'csv'
-MATCHES = CSV.parse(File.read('/home/naveen/Desktop/Unit_Testing/src/data/matches.csv  '), headers: true)
+MATCHES = CSV.parse(File.read('/home/naveen/Desktop/Unit_Testing/src/data/matches.csv'), headers: true)
 
 class E
      def winsPerTeam(matches)
@@ -20,16 +20,17 @@ class E
        return obj
        File.open('../output/6_highest_player_of_match.json', 'wb') { |file| file.puts JSON.pretty_generate(obj) }
      end
+end 
+output = {}
+output = E.new.winsPerTeam(MATCHES)
+puts output
      
-     output = {}
-     output = winsPerTeam(matches)
-     
-     store = {}
-     for year in output do
-       store [year[0]] = year[1].sort_by(&:last)[-1]
-     end
-end
-store = E.new.winsPerTeam(MATCHES)
+#      store = {}
+#      for year in output do
+#        store [year[0]] = year[1].sort_by(&:last)[-1]
+#      end
+# end
+# store = E.new.winsPerTeam(MATCHES)
 # puts store
 
 # File.open('../public/output/problem-6.json', 'wb') { |file| file.puts JSON.pretty_generate(store) }
