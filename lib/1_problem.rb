@@ -2,7 +2,7 @@
 require 'csv'
 MATCHES= CSV.parse(File.read('/home/naveen/Desktop/Unit_Testing/src/data/matches.csv'), headers: true)
 
-class A
+class QUESTION1
   def matchesPerYear(matches)
   result = {}
   
@@ -16,6 +16,6 @@ class A
     result
   end
 end
-output = A.new.matchesPerYear(MATCHES)
+output = QUESTION1.new.matchesPerYear(MATCHES)
 puts(output)
 #   File.open('../public/output/problem-1.json', 'wb') { |file| file.puts JSON.pretty_generate(output) }

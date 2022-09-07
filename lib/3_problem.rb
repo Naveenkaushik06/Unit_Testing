@@ -3,7 +3,7 @@ require 'csv'
 MATCHES = CSV.parse(File.read('/home/naveen/Desktop/Unit_Testing/src/data/matches.csv'), headers: true)
 DELIVERIES = CSV.parse(File.read('/home/naveen/Desktop/Unit_Testing/src/data/deliveries.csv'), headers: true)
 
-class C
+class QUESTION3
     def extraRunsByTeam(matches, deliveries)
       extrarun = {}
       for matchdata in matches
@@ -28,5 +28,5 @@ class C
 end
     
 output = {}
-output = C.new.extraRunsByTeam(MATCHES, DELIVERIES)
+output = QUESTION3.new.extraRunsByTeam(MATCHES, DELIVERIES)
 puts output

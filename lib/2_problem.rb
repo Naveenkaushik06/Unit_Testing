@@ -1,7 +1,7 @@
 # Number of matches won per team per year in IPL.
 require 'csv'
 MATCHES= CSV.parse(File.read('/home/naveen/Desktop/Unit_Testing/src/data/matches.csv'), headers: true)
-class B
+class QUESTION2
     def winsPerTeam(matches)
       obj = {}
       for year in matches
@@ -20,5 +20,5 @@ class B
     end
 end
 output = {}
-output = B.new.winsPerTeam(MATCHES)
+output = QUESTION2.new.winsPerTeam(MATCHES)
 puts(output)

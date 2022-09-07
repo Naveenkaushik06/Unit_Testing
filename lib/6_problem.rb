@@ -2,7 +2,7 @@
 require 'csv'
 MATCHES = CSV.parse(File.read('/home/naveen/Desktop/Unit_Testing/src/data/matches.csv'), headers: true)
 
-class E
+class QUESTION6
      def winsPerTeam(matches)
        obj = {}
        for year in matches
@@ -22,7 +22,7 @@ class E
      end
 end 
 output = {}
-output = E.new.winsPerTeam(MATCHES)
+output = QUESTION6.new.winsPerTeam(MATCHES)
 puts output
      
 #      store = {}

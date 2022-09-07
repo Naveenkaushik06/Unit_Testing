@@ -2,7 +2,7 @@
 require 'csv'
 MATCHES = CSV.parse(File.read('/home/naveen/Desktop/Unit_Testing/src/data/matches.csv'), headers: true)
 
-class D
+class QUESTION5
     def winTossWinMatch(matches)
       result = {}
       for m in matches
@@ -20,5 +20,5 @@ class D
 end
     
 output = {}
-output = D.new.winTossWinMatch(MATCHES)
+output = QUESTION5.new.winTossWinMatch(MATCHES)
 puts output

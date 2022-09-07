@@ -3,7 +3,7 @@ require 'csv'
 MATCHES = CSV.parse(File.read('/home/naveen/Desktop/Unit_Testing/src/data/matches.csv'), headers: true)
 DELIVERIES =CSV.parse(File.read('/home/naveen/Desktop/Unit_Testing/src/data/deliveries.csv'),headers:true)
 
-class Z
+class QUESTION4
 def economicalBowlers(matches, deliveries)
     bowlers = {}
     for  matchdata in matches do
@@ -53,7 +53,7 @@ def economicalBowlers(matches, deliveries)
 end
 end
 output= {}
-output = Z.new.economicalBowlers(MATCHES, DELIVERIES)
+output = QUESTION4.new.economicalBowlers(MATCHES, DELIVERIES)
 puts output
 # File.open('/home/himanshu/Desktop/Ruby/src/output/4_Top_10_Economical.json','wb'){ |file| file.puts JSON.pretty_generate(output) }
 
