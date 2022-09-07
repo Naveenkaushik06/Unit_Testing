@@ -50,21 +50,6 @@ class QUESTION9
 end
 output = {}
 output = QUESTION9.new.economicalBowlers(MATCHES, DELIVERIES)
-puts output
-# File.open('/home/himanshu/Desktop/Ruby/src/output/9_best_economical_super_over.json','wb'){ |file| file.puts JSON.pretty_generate(output) }
+# puts output
 
 
-# plot = Gruff::Bar.new
-# plot.x_axis_label = 'Names of Bowlers'
-# plot.y_axis_label = 'Top Economy'
-# plot.y_axis_increment = 3
-# plot.show_labels_for_bar_values = true
-# plot.theme = { marker_color: 'black', background_colors: %w[white purple] }
-# plot.title = 'Top 5 Economy Bowlers in Super Overs'
-
-# output.each do |bowler, economy_count|
-  
-#   plot.data(bowler, economy_count, '#'.concat(Random.bytes(3).unpack1('H*').to_s))
-# end
-
-# plot.write('/home/himanshu/Desktop/Ruby/src/plot/9_best_economical_super_over.png')

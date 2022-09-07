@@ -18,4 +18,3 @@ class QUESTION1
 end
 output = QUESTION1.new.matchesPerYear(MATCHES)
 puts(output)
-#   File.open('../public/output/problem-1.json', 'wb') { |file| file.puts JSON.pretty_generate(output) }

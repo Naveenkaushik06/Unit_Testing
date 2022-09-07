@@ -55,20 +55,3 @@ end
 output= {}
 output = QUESTION4.new.economicalBowlers(MATCHES, DELIVERIES)
 puts output
-# File.open('/home/himanshu/Desktop/Ruby/src/output/4_Top_10_Economical.json','wb'){ |file| file.puts JSON.pretty_generate(output) }
-
-
-# plot = Gruff::Bar.new
-# plot.x_axis_label = 'Names of Bowlers'
-# plot.y_axis_label = 'Top Economy'
-# plot.y_axis_increment = 3
-# plot.show_labels_for_bar_values = true
-# plot.theme = { marker_color: 'black', background_colors: %w[white purple] }
-# plot.title = 'Top 10 Economy Bowlers'
-
-# output.each do |season, matches_count|
-  
-#   plot.data(season, matches_count, '#'.concat(Random.bytes(3).unpack1('H*').to_s))
-# end
-
-# plot.write('/home/himanshu/Desktop/Ruby/src/plot/4_Top_10_Economical.png')

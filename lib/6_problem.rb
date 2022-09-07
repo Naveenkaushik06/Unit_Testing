@@ -24,13 +24,3 @@ end
 output = {}
 output = QUESTION6.new.winsPerTeam(MATCHES)
 puts output
-     
-#      store = {}
-#      for year in output do
-#        store [year[0]] = year[1].sort_by(&:last)[-1]
-#      end
-# end
-# store = E.new.winsPerTeam(MATCHES)
-# puts store
-
-# File.open('../public/output/problem-6.json', 'wb') { |file| file.puts JSON.pretty_generate(store) }
